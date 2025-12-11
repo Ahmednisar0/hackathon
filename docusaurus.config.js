@@ -19,7 +19,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'MUHAMMADSHAHRUKH459', // Usually your GitHub org/user name.
+  organizationName: 'mxn890', // Usually your GitHub org/user name.
   projectName: 'robotics-textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -72,7 +72,7 @@ const config = {
             label: 'Textbook',
           },
           {
-            href: 'https://github.com/MUHAMMADSHAHRUKH459/robotics-textbook',
+            href: 'https://github.com/mxn890/ai-hackathon.git',
             label: 'GitHub',
             position: 'right',
           },
