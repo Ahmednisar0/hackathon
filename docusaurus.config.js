@@ -43,7 +43,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/mxn890/ai-hackathon.git',
+            'https://github.com/Ahmednisar0/hackathon.git',
         },
         blog: false,
         theme: {
@@ -72,7 +72,7 @@ const config = {
             label: 'Textbook',
           },
           {
-            href: 'https://github.com/mxn890/ai-hackathon.git',
+            href: 'https://github.com/Ahmednisar0/hackathon.git',
             label: 'GitHub',
             position: 'right',
           },
@@ -112,7 +112,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/mxn890/ai-hackathon.git',
+                href: 'https://github.com/Ahmednisar0/hackathon.git',
               },
               {
                 label: 'Panaversity',
