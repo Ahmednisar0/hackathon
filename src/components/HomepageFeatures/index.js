@@ -1,89 +1,49 @@
-import React from 'clsx';
+import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'AI-Powered Humanoid Control',
-    icon: '🤖',
+    title: 'Easy to Use',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Advanced neural networks and reinforcement learning algorithms 
-        enabling seamless human-like movements, balance, and real-time 
-        environmental adaptation for bipedal locomotion.
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
       </>
     ),
   },
   {
-    title: 'Sensor Fusion & Perception',
-    icon: '👁️',
+    title: 'Focus on What Matters',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Multi-modal sensor integration combining vision, LiDAR, IMU, and 
-        tactile sensors for comprehensive environmental awareness and 
-        intelligent decision-making in dynamic scenarios.
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
   {
-    title: 'Real-time Motion Planning',
-    icon: '⚡',
+    title: 'Powered by React',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        High-frequency trajectory optimization and predictive control 
-        systems ensuring stable gait patterns, obstacle avoidance, and 
-        energy-efficient movement in unstructured environments.
-      </>
-    ),
-  },
-  {
-    title: 'Cognitive Architecture',
-    icon: '🧠',
-    description: (
-      <>
-        Hierarchical cognitive frameworks integrating symbolic reasoning 
-        with deep learning for task planning, human interaction, and 
-        autonomous problem-solving capabilities.
-      </>
-    ),
-  },
-  {
-    title: 'Hardware-Software Co-design',
-    icon: '🔧',
-    description: (
-      <>
-        Custom actuator systems, lightweight materials, and embedded 
-        computing optimized for power efficiency, durability, and 
-        performance in real-world applications.
-      </>
-    ),
-  },
-  {
-    title: 'Human-Robot Collaboration',
-    icon: '🤝',
-    description: (
-      <>
-        Intuitive communication interfaces, safety protocols, and 
-        collaborative task execution enabling seamless integration 
-        with human teams across industrial and service domains.
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
       </>
     ),
   },
 ];
 
-function Feature({icon, title, description}) {
+function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4 margin-bottom--lg')}>
-      <div className={styles.featureCard}>
-        <div className={styles.featureIconContainer}>
-          <span className={styles.featureIcon}>{icon}</span>
-        </div>
-        <div className={styles.featureContent}>
-          <Heading as="h3" className={styles.featureTitle}>
-            {title}
-          </Heading>
-          <p className={styles.featureDescription}>{description}</p>
-        </div>
+    <div className={clsx('col col--4')}>
+      <div className="text--center">
+        <Svg className={styles.featureSvg} role="img" />
+      </div>
+      <div className="text--center padding-horiz--md">
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
       </div>
     </div>
   );
@@ -94,46 +54,9 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          <div className="col col--12">
-            <div className={styles.sectionHeader}>
-              <Heading as="h2" className={styles.sectionTitle}>
-                Core Technologies & Capabilities
-              </Heading>
-              <p className={styles.sectionSubtitle}>
-                Building the next generation of intelligent humanoid systems 
-                through cutting-edge research and engineering
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
-        </div>
-        <div className="row">
-          <div className="col col--12">
-            <div className={styles.ctaContainer}>
-              <p className={styles.ctaText}>
-                Join us in shaping the future of embodied intelligence and 
-                humanoid robotics
-              </p>
-              <div className={styles.ctaButtons}>
-                <a
-                  className="button button--primary button--lg"
-                  href="/docs/intro"
-                >
-                  Explore Documentation
-                </a>
-                <a
-                  className="button button--outline button--lg"
-                  href="/research"
-                >
-                  View Research Papers
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
